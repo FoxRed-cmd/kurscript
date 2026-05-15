@@ -1,4 +1,5 @@
-```(() => {
+```
+(() => {
     const parsed = JSON.parse(decodeURIComponent(escape(atob(data))));
  
     const answers = parsed.d.sl.g.reduce((first, theme) => {
@@ -33,4 +34,5 @@
                 .map(el => el.textContent.includes('!') || (el.innerText = el.textContent + '!'))
         } catch (_) {}
     }, 5000)
-})();```
+})();
+```
